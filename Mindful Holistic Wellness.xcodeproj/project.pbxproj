@@ -7,18 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3835740C2AFB370E00EFA132 /* NewsEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835740B2AFB370E00EFA132 /* NewsEventsView.swift */; };
+		3835740E2AFBD8B100EFA132 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835740D2AFBD8B100EFA132 /* Test.swift */; };
+		383574102AFBEAA500EFA132 /* ScheduleDateAndTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835740F2AFBEAA400EFA132 /* ScheduleDateAndTimeView.swift */; };
+		383574122AFBEBCF00EFA132 /* ScheduleEventTitleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383574112AFBEBCF00EFA132 /* ScheduleEventTitleDetailsView.swift */; };
+		383574142AFC36A100EFA132 /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383574132AFC36A100EFA132 /* ContactUsView.swift */; };
+		383574162AFC59DC00EFA132 /* ContactUsProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383574152AFC59DC00EFA132 /* ContactUsProfileView.swift */; };
+		383574182AFD1C4600EFA132 /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383574172AFD1C4600EFA132 /* SocialMediaButton.swift */; };
 		38411EFA2AF950680094AB50 /* Mindful_Holistic_WellnessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411EF92AF950680094AB50 /* Mindful_Holistic_WellnessApp.swift */; };
 		38411EFC2AF950680094AB50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411EFB2AF950680094AB50 /* ContentView.swift */; };
 		38411EFE2AF9506A0094AB50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38411EFD2AF9506A0094AB50 /* Assets.xcassets */; };
 		38411F012AF9506A0094AB50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38411F002AF9506A0094AB50 /* Preview Assets.xcassets */; };
+		38411F092AF963440094AB50 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F082AF963440094AB50 /* Color+Extension.swift */; };
+		38411F0B2AF963690094AB50 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38411F0A2AF963690094AB50 /* Colors.xcassets */; };
+		38411F102AF9708A0094AB50 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F0F2AF9708A0094AB50 /* WelcomeView.swift */; };
+		38411F122AF9AE070094AB50 /* GetStartedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F112AF9AE070094AB50 /* GetStartedButton.swift */; };
+		38411F142AF9AEC70094AB50 /* WelcomeScreenBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F132AF9AEC70094AB50 /* WelcomeScreenBackgroundView.swift */; };
+		38411F162AF9AF690094AB50 /* WelcomeMessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F152AF9AF690094AB50 /* WelcomeMessageTextView.swift */; };
+		38411F192AF9B2C50094AB50 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F182AF9B2C50094AB50 /* MainView.swift */; };
+		38411F1B2AF9C7270094AB50 /* ScheduleListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F1A2AF9C7270094AB50 /* ScheduleListRowView.swift */; };
+		38411F1F2AF9D4B60094AB50 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F1E2AF9D4B60094AB50 /* Event.swift */; };
+		38411F212AF9D7540094AB50 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F202AF9D7540094AB50 /* ScheduleViewModel.swift */; };
+		38411F232AF9EABD0094AB50 /* EventbriteAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F222AF9EABD0094AB50 /* EventbriteAPIManager.swift */; };
+		38411F252AF9FD800094AB50 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 38411F242AF9FD800094AB50 /* events.json */; };
+		38A58F852AFAB9B10060B1E4 /* BloggerAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F842AFAB9B10060B1E4 /* BloggerAPIManager.swift */; };
+		38A58F872AFAB9FA0060B1E4 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F862AFAB9FA0060B1E4 /* Blog.swift */; };
+		38A58F892AFAFF5F0060B1E4 /* BlogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F882AFAFF5F0060B1E4 /* BlogViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3835740B2AFB370E00EFA132 /* NewsEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEventsView.swift; sourceTree = "<group>"; };
+		3835740D2AFBD8B100EFA132 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		3835740F2AFBEAA400EFA132 /* ScheduleDateAndTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDateAndTimeView.swift; sourceTree = "<group>"; };
+		383574112AFBEBCF00EFA132 /* ScheduleEventTitleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEventTitleDetailsView.swift; sourceTree = "<group>"; };
+		383574132AFC36A100EFA132 /* ContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
+		383574152AFC59DC00EFA132 /* ContactUsProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsProfileView.swift; sourceTree = "<group>"; };
+		383574172AFD1C4600EFA132 /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
 		38411EF62AF950680094AB50 /* Mindful Holistic Wellness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mindful Holistic Wellness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38411EF92AF950680094AB50 /* Mindful_Holistic_WellnessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mindful_Holistic_WellnessApp.swift; sourceTree = "<group>"; };
 		38411EFB2AF950680094AB50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38411EFD2AF9506A0094AB50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38411F002AF9506A0094AB50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38411F082AF963440094AB50 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		38411F0A2AF963690094AB50 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		38411F0E2AF968BE0094AB50 /* Mindful-Holistic-Wellness-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mindful-Holistic-Wellness-Info.plist"; sourceTree = SOURCE_ROOT; };
+		38411F0F2AF9708A0094AB50 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		38411F112AF9AE070094AB50 /* GetStartedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedButton.swift; sourceTree = "<group>"; };
+		38411F132AF9AEC70094AB50 /* WelcomeScreenBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenBackgroundView.swift; sourceTree = "<group>"; };
+		38411F152AF9AF690094AB50 /* WelcomeMessageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageTextView.swift; sourceTree = "<group>"; };
+		38411F182AF9B2C50094AB50 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		38411F1A2AF9C7270094AB50 /* ScheduleListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListRowView.swift; sourceTree = "<group>"; };
+		38411F1E2AF9D4B60094AB50 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		38411F202AF9D7540094AB50 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		38411F222AF9EABD0094AB50 /* EventbriteAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventbriteAPIManager.swift; sourceTree = "<group>"; };
+		38411F242AF9FD800094AB50 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		38A58F842AFAB9B10060B1E4 /* BloggerAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerAPIManager.swift; sourceTree = "<group>"; };
+		38A58F862AFAB9FA0060B1E4 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
+		38A58F882AFAFF5F0060B1E4 /* BlogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +80,7 @@
 		38411EED2AF950680094AB50 = {
 			isa = PBXGroup;
 			children = (
+				3835740D2AFBD8B100EFA132 /* Test.swift */,
 				38411EF82AF950680094AB50 /* Mindful Holistic Wellness */,
 				38411EF72AF950680094AB50 /* Products */,
 			);
@@ -51,10 +97,27 @@
 		38411EF82AF950680094AB50 /* Mindful Holistic Wellness */ = {
 			isa = PBXGroup;
 			children = (
+				38411F0E2AF968BE0094AB50 /* Mindful-Holistic-Wellness-Info.plist */,
+				38411F072AF963000094AB50 /* Shared */,
 				38411EF92AF950680094AB50 /* Mindful_Holistic_WellnessApp.swift */,
+				38411F182AF9B2C50094AB50 /* MainView.swift */,
 				38411EFB2AF950680094AB50 /* ContentView.swift */,
+				38411F1A2AF9C7270094AB50 /* ScheduleListRowView.swift */,
+				3835740F2AFBEAA400EFA132 /* ScheduleDateAndTimeView.swift */,
+				383574112AFBEBCF00EFA132 /* ScheduleEventTitleDetailsView.swift */,
+				38411F202AF9D7540094AB50 /* ScheduleViewModel.swift */,
+				38411F1E2AF9D4B60094AB50 /* Event.swift */,
+				38411F172AF9B0EA0094AB50 /* WelcomeViews */,
 				38411EFD2AF9506A0094AB50 /* Assets.xcassets */,
 				38411EFF2AF9506A0094AB50 /* Preview Content */,
+				38411F222AF9EABD0094AB50 /* EventbriteAPIManager.swift */,
+				38A58F842AFAB9B10060B1E4 /* BloggerAPIManager.swift */,
+				38A58F862AFAB9FA0060B1E4 /* Blog.swift */,
+				38A58F882AFAFF5F0060B1E4 /* BlogViewModel.swift */,
+				3835740B2AFB370E00EFA132 /* NewsEventsView.swift */,
+				383574132AFC36A100EFA132 /* ContactUsView.swift */,
+				383574172AFD1C4600EFA132 /* SocialMediaButton.swift */,
+				383574152AFC59DC00EFA132 /* ContactUsProfileView.swift */,
 			);
 			path = "Mindful Holistic Wellness";
 			sourceTree = "<group>";
@@ -65,6 +128,27 @@
 				38411F002AF9506A0094AB50 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		38411F072AF963000094AB50 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				38411F242AF9FD800094AB50 /* events.json */,
+				38411F082AF963440094AB50 /* Color+Extension.swift */,
+				38411F0A2AF963690094AB50 /* Colors.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		38411F172AF9B0EA0094AB50 /* WelcomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				38411F0F2AF9708A0094AB50 /* WelcomeView.swift */,
+				38411F152AF9AF690094AB50 /* WelcomeMessageTextView.swift */,
+				38411F132AF9AEC70094AB50 /* WelcomeScreenBackgroundView.swift */,
+				38411F112AF9AE070094AB50 /* GetStartedButton.swift */,
+			);
+			path = WelcomeViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +209,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38411F252AF9FD800094AB50 /* events.json in Resources */,
+				38411F0B2AF963690094AB50 /* Colors.xcassets in Resources */,
 				38411F012AF9506A0094AB50 /* Preview Assets.xcassets in Resources */,
 				38411EFE2AF9506A0094AB50 /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +224,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				38411EFC2AF950680094AB50 /* ContentView.swift in Sources */,
+				383574142AFC36A100EFA132 /* ContactUsView.swift in Sources */,
+				38A58F872AFAB9FA0060B1E4 /* Blog.swift in Sources */,
+				383574182AFD1C4600EFA132 /* SocialMediaButton.swift in Sources */,
+				38A58F892AFAFF5F0060B1E4 /* BlogViewModel.swift in Sources */,
+				38411F192AF9B2C50094AB50 /* MainView.swift in Sources */,
+				3835740E2AFBD8B100EFA132 /* Test.swift in Sources */,
+				38411F232AF9EABD0094AB50 /* EventbriteAPIManager.swift in Sources */,
+				38411F092AF963440094AB50 /* Color+Extension.swift in Sources */,
+				38411F122AF9AE070094AB50 /* GetStartedButton.swift in Sources */,
+				38411F1F2AF9D4B60094AB50 /* Event.swift in Sources */,
+				38411F142AF9AEC70094AB50 /* WelcomeScreenBackgroundView.swift in Sources */,
+				38A58F852AFAB9B10060B1E4 /* BloggerAPIManager.swift in Sources */,
+				38411F212AF9D7540094AB50 /* ScheduleViewModel.swift in Sources */,
 				38411EFA2AF950680094AB50 /* Mindful_Holistic_WellnessApp.swift in Sources */,
+				3835740C2AFB370E00EFA132 /* NewsEventsView.swift in Sources */,
+				38411F102AF9708A0094AB50 /* WelcomeView.swift in Sources */,
+				38411F162AF9AF690094AB50 /* WelcomeMessageTextView.swift in Sources */,
+				383574162AFC59DC00EFA132 /* ContactUsProfileView.swift in Sources */,
+				383574102AFBEAA500EFA132 /* ScheduleDateAndTimeView.swift in Sources */,
+				38411F1B2AF9C7270094AB50 /* ScheduleListRowView.swift in Sources */,
+				383574122AFBEBCF00EFA132 /* ScheduleEventTitleDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +381,9 @@
 				DEVELOPMENT_TEAM = 695JVU9K87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mindful-Holistic-Wellness-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,9 +410,9 @@
 				DEVELOPMENT_TEAM = 695JVU9K87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mindful-Holistic-Wellness-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
