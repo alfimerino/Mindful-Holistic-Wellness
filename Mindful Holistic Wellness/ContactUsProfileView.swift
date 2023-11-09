@@ -26,11 +26,6 @@ struct ContactUsProfileView: View {
                 .bold()
             
             Text(profileTitle)
-
-//            Text(profileBody)
-//                .foregroundStyle(Color.gray)
-//                .padding([.leading, .trailing])
-//
         }
     }
 }

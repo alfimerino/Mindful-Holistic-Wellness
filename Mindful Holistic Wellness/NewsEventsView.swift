@@ -15,7 +15,6 @@ struct NewsEventsView: View {
         List(blogViewModel.itemsList) { list in
             Section {
                 ForEach(list.postImages.indices, id: \.self) { index in
-//                    Text("\(list.postImages[index].url)")
                     HStack {
                         Spacer()
                         AsyncImage(url: URL(string: list.postImages[index].url)) { phase in
@@ -40,18 +39,12 @@ struct NewsEventsView: View {
             }
             .navigationTitle("News")
         }.listStyle(.grouped)
-        .onAppear {
-            blogViewModel.fetchData()
-            if let posts = blogViewModel.posts {
-                items = posts.items
+            .onAppear {
+                blogViewModel.fetchData()
+                if let posts = blogViewModel.posts {
+                    items = posts.items
+                }
             }
-        }
-//        .refreshable {
-//            blogViewModel.fetchData()
-//            if let posts = blogViewModel.posts {
-//                items = posts.items
-//            }
-//        }
     }
 }
 

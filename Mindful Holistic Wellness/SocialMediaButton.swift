@@ -39,13 +39,14 @@ struct SocialMediaButton: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(height: 50)
                 }
-            }
-            Link(destination:
-                    URL(string: sharePlatform.values().linkURL)!) {
-                Image(sharePlatform.values().imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 50)
+            } else {
+                Link(destination:
+                        URL(string: sharePlatform.values().linkURL)!) {
+                    Image(sharePlatform.values().imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 50)
+                }
             }
         }
     }

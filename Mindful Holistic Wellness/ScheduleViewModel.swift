@@ -9,7 +9,6 @@ import SwiftUI
 import Combine
 
 final class ScheduleViewModel: NSObject, ObservableObject {
-    // MARK: Fix this later
     static let shared = ScheduleViewModel()
     @Published var events = Event.sampleEvents()
 
