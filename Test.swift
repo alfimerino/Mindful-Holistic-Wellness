@@ -1,18 +1,30 @@
-//
-//  Test.swift
-//  Mindful Holistic Wellness
-//
-//  Created by Alfredo Merino on 11/8/23.
-//
-
 import SwiftUI
 
-struct Test: View {
+struct Conten22tView: View {
+    let data = (1...10).map { $0 } // Sample data
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            LazyVGrid(columns: [GridItem(), GridItem()]) {
+                ForEach(data, id: \.self) { item in
+                    // Your grid item content here
+                    VStack {
+                        Text("Item \(item)")
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    .padding()
+                }
+            }
+            .padding()
+        }
     }
 }
 
-#Preview {
-    Test()
+struct Conten22tView_Previews: PreviewProvider {
+    static var previews: some View {
+        Conten22tView()
+    }
 }

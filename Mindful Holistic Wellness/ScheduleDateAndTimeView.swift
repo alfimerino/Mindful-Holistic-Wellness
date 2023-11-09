@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct ScheduleDateAndTimeView: View {
+    var event: Event
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text(event.date)
+                .font(.footnote)
+                .foregroundStyle(event.cancelled ? Color.red : Color.blue)
+                .bold()
+            if event.cancelled {
+                Text("CANCELLED")
+                    .font(.footnote)
+                    .foregroundStyle(Color.red)
+                    .fontWeight(.heavy)
+            } else {
+                Text(event.time)
+                    .font(.footnote)
+                    .foregroundStyle(Color.blue)
+            }
+        }
     }
 }
 
 #Preview {
-    ScheduleDateAndTimeView()
+    ScheduleDateAndTimeView(event: ScheduleViewModel.shared.events.first!)
 }

@@ -8,14 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("showLaunchScreen") var firstLaunch = false
+    @ObservedObject private var scheduleViewModel = ScheduleViewModel.shared
+    let columns = [
+//            GridItem(.flexible(minimum: 0, maximum: 120)),
+        
+            GridItem(.flexible(minimum: 0, maximum: .infinity)),
+        ]
+    private let eventos = ScheduleViewModel.shared.eventos
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+//        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(eventos) { event in
+                        HStack {
+                            ScheduleListRowView(event: event)
+                        }
+                    }.padding(.horizontal).frame(maxHeight: 100)
+                }
+            }
+
+            .navigationTitle("Schedule")
+//        }
+        .fullScreenCover(isPresented: $firstLaunch, content: {
+            WelcomeView()
+        })
     }
 }
 

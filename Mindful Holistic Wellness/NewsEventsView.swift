@@ -8,8 +8,50 @@
 import SwiftUI
 
 struct NewsEventsView: View {
+    @ObservedObject private var blogViewModel = BlogViewModel()
+    @State private var items: [Item] = []
+    private var imagesURLs: [String]?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(blogViewModel.itemsList) { list in
+            Section {
+                ForEach(list.postImages.indices, id: \.self) { index in
+//                    Text("\(list.postImages[index].url)")
+                    HStack {
+                        Spacer()
+                        AsyncImage(url: URL(string: list.postImages[index].url)) { phase in
+                            switch phase {
+                            case .empty:
+                                ProgressView()
+                            case .success(let image):
+                                image.resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 400, height: 300, alignment: .center)
+                            case .failure:
+                                Image(systemName: "photo")
+                            @unknown default:
+                                EmptyView()
+                            }
+                        }
+                        Spacer()
+                    }
+                }
+            } header: {
+                Text(list.title)
+            }
+            .navigationTitle("News")
+        }.listStyle(.grouped)
+        .onAppear {
+            blogViewModel.fetchData()
+            if let posts = blogViewModel.posts {
+                items = posts.items
+            }
+        }
+//        .refreshable {
+//            blogViewModel.fetchData()
+//            if let posts = blogViewModel.posts {
+//                items = posts.items
+//            }
+//        }
     }
 }
 

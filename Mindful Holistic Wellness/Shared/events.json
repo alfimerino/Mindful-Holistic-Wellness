@@ -1,74 +1,102 @@
 [
     {
-        "title": "Sound Bath and Energy Healing | An Evening Lullaby Dedicated to You.",
-        "date": "Tomorrow at 7:30 PM",
-        "venue_name": "Beachcomber Resort & Club",
-        "venue_location": "Pompano Beach, FL"
-    },
-    {
-        "title": "Sound Bath, Movement & Piano | A voyage inward",
-        "date": "Mon, Nov 20, 7:00 PM",
-        "venue_name": "Beachcomber Resort & Club",
-        "venue_location": "Pompano Beach, FL"
-    },
-    {
+        "id": 89011,
         "title": "Sound Bath & Energy Healing | An Evening Lullaby Dedicated to You.",
-        "date": "Tue, Oct 24, 7:30 PM",
+        "event_date": "Tomorrow",
+        "event_time": "7:30 PM",
         "venue_name": "Beachcomber Resort & Club",
-        "venue_location": "Pompano Beach, FL"
+        "venue_location": "Pompano Beach, FL",
+        "cancelled": false
     },
     {
-        "title": "Beachfront Floating Sound Bath |  at the Beachcomber Resort & Club",
-        "date": "Wed, Oct 18, 7:30 PM",
-        "venue_name": "Beachcomber Resort & Club",
-        "venue_location": "Pompano Beach, FL"
-    },
-    {
-        "title": "Mindful  Morning Beachside Retreat + Mini Market. Yoga.Pilates.Sound Bath",
-        "date": "Sun, Oct 15, 9:00 AM",
-        "venue_name": "Beachcomber Resort & Club",
-        "venue_location": "Pompano Beach, FL"
-    },
-    {
-        "title": "Sound Bath & Energy Healing | An Evening Lullaby Dedicated to You.",
-        "date": "Tue, Sep 26, 7:30 PM",
-        "venue_name": "Beachcomber Resort & Club",
-        "venue_location": "Pompano Beach, FL"
-    },
-    {
-        "title": "Pompano Beach Mini Market",
-        "date": "Wed, Sep 6, 5:00 PM",
-        "venue_name": "The Little Coffee Shoppe",
-        "venue_location": "North Federal Highway, Pompano Beach, FL"
-    },
-    {
-        "title": "Beach Sound Bath & Reiki with Emmy @The_Mindful_OT & Tree Om Sound Bath",
-        "date": "Tue, Aug 15, 7:30 PM",
-        "venue_name": "Beachcomber Resort & Club",
-        "venue_location": "Pompano Beach, FL"
-    },
-    {
-        "title": "Float Sound Bath | Pool floats sold out. Sunbeds|yoga spaces available.",
-        "date": "Mon, Aug 7, 7:30 PM",
-        "venue_name": "Beachcomber Resort & Club",
-        "venue_location": "Pompano Beach, FL"
-    },
-    {
-        "title": "A Mindful  Morning Beachside Retreat + Mini Market",
-        "date": "Sun, Jul 30, 9:00 AM",
-        "venue_name": "Beachcomber Resort & Club",
-        "venue_location": "Pompano Beach, FL"
-    },
-    {
+        "id": 45670,
         "title": "Beach Sound Bath & Energy Healing | An Evening Lullaby Dedicated to You.",
-        "date": "Tue, Jul 11, 7:30 PM",
+        "event_date": "Tue, Nov 11",
+        "event_time": "7:30 PM",
         "venue_name": "Beachcomber Resort & Club",
-        "venue_location": "Pompano Beach, FL"
+        "venue_location": "Pompano Beach, FL",
+        "cancelled": true
     },
     {
-        "title": "Sound Bath & Energy Healing | An Evening Lullaby Dedicated to You.",
-        "date": "Mon, Jun 5, 7:30 PM",
+        "id": 12309,
+        "title": "A Mindful  Morning Beachside Retreat + Mini Market",
+        "event_date": "Sun, Nov 30",
+        "event_time": "9:00 AM",
         "venue_name": "Beachcomber Resort & Club",
-        "venue_location": "Pompano Beach, FL"
+        "venue_location": "Pompano Beach, FL",
+        "cancelled": false
+    },
+    {
+        "id": 56789,
+        "title": "Float Sound Bath | Pool floats sold out. Sunbeds|yoga spaces available.",
+        "event_date": "Mon, Dec 7",
+        "event_time": "7:30 PM",
+        "venue_name": "Beachcomber Resort & Club",
+        "venue_location": "Pompano Beach, FL",
+        "cancelled": false
+    },
+    {
+        "id": 90123,
+        "title": "Beach Sound Bath & Reiki with Emmy @The_Mindful_OT & Tree Om Sound Bath",
+        "event_date": "Tue, Dec 5",
+        "event_time": "7:30 PM",
+        "venue_name": "Beachcomber Resort & Club",
+        "venue_location": "Pompano Beach, FL",
+        "cancelled": true
+    },
+    {
+        "id": 45678,
+        "title": "Pompano Beach Mini Market",
+        "event_date": "Wed, Dec 16",
+        "event_time": "5:00 PM",
+        "venue_name": "The Little Coffee Shoppe",
+        "venue_location": "North Federal Highway, Pompano Beach, FL",
+        "cancelled": false
+    },
+    {
+        "id": 89012,
+        "title": "Sound Bath & Energy Healing | An Evening Lullaby Dedicated to You.",
+        "event_date": "Tue, Dec 20",
+        "event_time": "7:30 PM",
+        "venue_name": "Beachcomber Resort & Club",
+        "venue_location": "Pompano Beach, FL",
+        "cancelled": false
+    },
+    {
+        "id": 34567,
+        "title": "Mindful  Morning Beachside Retreat + Mini Market. Yoga.Pilates.Sound Bath",
+        "event_date": "Sun, Dec 30",
+        "event_time": "9:00 AM",
+        "venue_name": "Beachcomber Resort & Club",
+        "venue_location": "Pompano Beach, FL",
+        "cancelled": true
+    },
+    {
+        "id": 78901,
+        "title": "Beachfront Floating Sound Bath |  at the Beachcomber Resort & Club",
+        "event_date": "Wed, Jan 8",
+        "event_time": "7:30 PM",
+        "venue_name": "Beachcomber Resort & Club",
+        "venue_location": "Pompano Beach, FL",
+        "cancelled": false
+    },
+    {
+        "id": 23456,
+        "title": "Sound Bath & Energy Healing | An Evening Lullaby Dedicated to You.",
+        "event_date": "Tue, Jan 24",
+        "event_time": "7:30 PM",
+        "venue_name": "Beachcomber Resort & Club",
+        "venue_location": "Pompano Beach, FL",
+        "cancelled": false
+    },
+    {
+        "id": 67890,
+        "title": "Sound Bath, Movement & Piano | A voyage inward",
+        "event_date": "Mon, Jan 30",
+        "event_time": "7:00 PM",
+        "venue_name": "Beachcomber Resort & Club",
+        "venue_location": "Pompano Beach, FL",
+        "cancelled": true
     }
 ]
+

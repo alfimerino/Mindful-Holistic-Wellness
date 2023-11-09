@@ -9,7 +9,40 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            NavigationView {
+                ContentView()
+            }
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "calendar")
+
+                            Text("Schedule")
+                        }
+                    }
+            NavigationView {
+                NewsEventsView()
+            }
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "newspaper")
+
+                            Text("News & Events")
+                        }
+                    }
+            NavigationView {
+                ContactUsView()
+            }
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "person.fill")
+
+                            Text("About")
+                        }
+                    }
+
+        }
+//        .tint(Color.primeBeige1)
     }
 }
 

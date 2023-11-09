@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct Mindful_Holistic_WellnessApp: App {
+    init() {
+        UserDefaults.standard.register(defaults: [
+            "showLaunchScreen": true
+        ])
+    }
+    @AppStorage("showLaunchScreen") var firstLaunch = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if firstLaunch {
+                WelcomeView()                
+            } else {
+                MainView()
+            }
         }
     }
 }
