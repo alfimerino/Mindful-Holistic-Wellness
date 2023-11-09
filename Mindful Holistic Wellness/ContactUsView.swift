@@ -31,6 +31,7 @@ struct ContactUsView: View {
                 SocialMediaButton(sharePlatform: .facebook)
                 SocialMediaButton(sharePlatform: .eventbrite).clipShape(Circle())
                 SocialMediaButton(sharePlatform: .email)
+                Spacer()
             }.padding(.top, 20)
 
 
