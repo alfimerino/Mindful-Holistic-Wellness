@@ -23,12 +23,14 @@ struct ContactUsView: View {
             Image("Group3")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(height: 200)
+                .frame(height: 180)
 
-            HStack(spacing: 20) {
+            HStack(alignment: .center, spacing: 32) {
+                Spacer()
                 SocialMediaButton(sharePlatform: .instagram)
                 SocialMediaButton(sharePlatform: .facebook)
                 SocialMediaButton(sharePlatform: .eventbrite).clipShape(Circle())
+                SocialMediaButton(sharePlatform: .email)
             }.padding(.top, 20)
 
 

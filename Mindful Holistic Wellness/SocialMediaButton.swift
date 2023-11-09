@@ -16,13 +16,13 @@ enum SharePlatform {
     func values() -> (linkURL: String, imageName: String) {
         switch self {
         case .facebook:
-            return ("facebook.com", "facebook-logo")
+            return ("https://www.facebook.com/YO.Tholisticwellness", "facebook-logo")
         case .instagram:
-            return ("instagram.com", "instagram-logo")
+            return ("https://www.instagram.com/the_mindful_ot", "instagram-logo")
         case .eventbrite:
-            return ("eventbrite.com", "eventbrite-logo")
+            return ("https://www.eventbrite.com/o/mindful-holistic-wellness-34303308985", "eventbrite-logo")
         case .email:
-            return ("info@wellnessyot.com", "paperplane")
+            return ("mailto:info@wellnessyot.com", "paperplane")
         }
     }
 }
@@ -31,14 +31,15 @@ struct SocialMediaButton: View {
     var sharePlatform: SharePlatform = .facebook
     var body: some View {
         HStack {
-//            Link(destination:
-//                    URL(string: "https://www.instagram.com/the_mindful_ot/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==")!) {
-//                Image("instagram-logo")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .frame(height: 100)
-//            }
-
+            if sharePlatform == .email {
+                Link(destination:
+                        URL(string: "\(sharePlatform.values().linkURL)")!) {
+                    Image(systemName: sharePlatform.values().imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 50)
+                }
+            }
             Link(destination:
                     URL(string: sharePlatform.values().linkURL)!) {
                 Image(sharePlatform.values().imageName)
