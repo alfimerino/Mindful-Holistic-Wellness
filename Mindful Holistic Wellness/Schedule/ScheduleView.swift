@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  ScheduleView.swift
 //  Mindful Holistic Wellness
 //
-//  Created by Alfredo Merino on 11/6/23.
+//  Created by Alfredo Merino on 11/9/23.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct ScheduleView: View {
     @AppStorage("showLaunchScreen") var firstLaunch = false
     @ObservedObject private var scheduleViewModel = ScheduleViewModel.shared
     let columns = [
@@ -34,5 +34,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ScheduleView()
 }
