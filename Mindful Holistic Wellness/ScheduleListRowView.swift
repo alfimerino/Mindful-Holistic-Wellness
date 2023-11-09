@@ -23,19 +23,15 @@ struct ScheduleListRowView: View {
                 } else {
                     Text(event.time)
                         .font(.footnote)
-                        .foregroundStyle(event.cancelled  ? Color.red : Color.blue)
+                        .foregroundStyle(event.cancelled ? Color.red : Color.blue).padding(.trailing, 30)
                 }
-            }
-
+            }.padding(.trailing, 20)
             VStack(alignment: .leading) {
-                HStack {
-
                     Text(event.title)
                         .font(.headline)
                         .bold()
-                }
-                //                Text(Image(systemName: "mappin.and.ellipse")) +
-                Text("\(" ")\(event.location)")
+                Text(Image(systemName: "mappin.and.ellipse")) +
+                Text("\(event.location)")
                     .font(.footnote)
             }
         }

@@ -13,36 +13,34 @@ struct MainView: View {
             NavigationView {
                 ContentView()
             }
-                    .tabItem {
-                        VStack {
-                            Image(systemName: "calendar")
+            .tabItem {
+                VStack {
+                    Image(systemName: "calendar")
 
-                            Text("Schedule")
-                        }
-                    }
+                    Text("Schedule")
+                }
+            }
             NavigationView {
                 NewsEventsView()
             }
-                    .tabItem {
-                        VStack {
-                            Image(systemName: "newspaper")
+            .tabItem {
+                VStack {
+                    Image(systemName: "newspaper")
 
-                            Text("News & Events")
-                        }
-                    }
+                    Text("News & Events")
+                }
+            }
             NavigationView {
                 ContactUsView()
             }
-                    .tabItem {
-                        VStack {
-                            Image(systemName: "person.fill")
+            .tabItem {
+                VStack {
+                    Image(systemName: "person.fill")
 
-                            Text("About")
-                        }
-                    }
-
+                    Text("About")
+                }
+            }
         }
-//        .tint(Color.primeBeige1)
     }
 }
 

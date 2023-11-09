@@ -28,7 +28,6 @@
 		38411F1B2AF9C7270094AB50 /* ScheduleListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F1A2AF9C7270094AB50 /* ScheduleListRowView.swift */; };
 		38411F1F2AF9D4B60094AB50 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F1E2AF9D4B60094AB50 /* Event.swift */; };
 		38411F212AF9D7540094AB50 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F202AF9D7540094AB50 /* ScheduleViewModel.swift */; };
-		38411F232AF9EABD0094AB50 /* EventbriteAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F222AF9EABD0094AB50 /* EventbriteAPIManager.swift */; };
 		38411F252AF9FD800094AB50 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 38411F242AF9FD800094AB50 /* events.json */; };
 		38A58F852AFAB9B10060B1E4 /* BloggerAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F842AFAB9B10060B1E4 /* BloggerAPIManager.swift */; };
 		38A58F872AFAB9FA0060B1E4 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F862AFAB9FA0060B1E4 /* Blog.swift */; };
@@ -59,7 +58,6 @@
 		38411F1A2AF9C7270094AB50 /* ScheduleListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListRowView.swift; sourceTree = "<group>"; };
 		38411F1E2AF9D4B60094AB50 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		38411F202AF9D7540094AB50 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
-		38411F222AF9EABD0094AB50 /* EventbriteAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventbriteAPIManager.swift; sourceTree = "<group>"; };
 		38411F242AF9FD800094AB50 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		38A58F842AFAB9B10060B1E4 /* BloggerAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerAPIManager.swift; sourceTree = "<group>"; };
 		38A58F862AFAB9FA0060B1E4 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				38411F172AF9B0EA0094AB50 /* WelcomeViews */,
 				38411EFD2AF9506A0094AB50 /* Assets.xcassets */,
 				38411EFF2AF9506A0094AB50 /* Preview Content */,
-				38411F222AF9EABD0094AB50 /* EventbriteAPIManager.swift */,
 				38A58F842AFAB9B10060B1E4 /* BloggerAPIManager.swift */,
 				38A58F862AFAB9FA0060B1E4 /* Blog.swift */,
 				38A58F882AFAFF5F0060B1E4 /* BlogViewModel.swift */,
@@ -230,7 +227,6 @@
 				38A58F892AFAFF5F0060B1E4 /* BlogViewModel.swift in Sources */,
 				38411F192AF9B2C50094AB50 /* MainView.swift in Sources */,
 				3835740E2AFBD8B100EFA132 /* Test.swift in Sources */,
-				38411F232AF9EABD0094AB50 /* EventbriteAPIManager.swift in Sources */,
 				38411F092AF963440094AB50 /* Color+Extension.swift in Sources */,
 				38411F122AF9AE070094AB50 /* GetStartedButton.swift in Sources */,
 				38411F1F2AF9D4B60094AB50 /* Event.swift in Sources */,
