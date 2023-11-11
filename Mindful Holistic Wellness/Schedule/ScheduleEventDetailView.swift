@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ScheduleEventDetailView: View {
     @State private var pickerSelection = 0
-    @Environment (\.dismiss) var dismiss
+    @Environment (\.dismiss) var dismiss    
     var body: some View {
         VStack {
             Button {

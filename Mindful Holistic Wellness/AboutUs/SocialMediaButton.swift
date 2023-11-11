@@ -12,6 +12,7 @@ enum SharePlatform {
     case instagram
     case eventbrite
     case email
+    case yt
 
     func values() -> (linkURL: String, imageName: String) {
         switch self {
@@ -23,12 +24,14 @@ enum SharePlatform {
             return ("https://www.eventbrite.com/o/mindful-holistic-wellness-34303308985", "eventbrite-logo")
         case .email:
             return ("mailto:info@wellnessyot.com", "paperplane")
+        case .yt:
+            return ("https://www.youtube.com/@themindfulOT", "yt-logo")
         }
     }
 }
 
 struct SocialMediaButton: View {
-    var sharePlatform: SharePlatform = .facebook
+    var sharePlatform: SharePlatform = .yt
     var body: some View {
         HStack {
             if sharePlatform == .email {
@@ -53,5 +56,5 @@ struct SocialMediaButton: View {
 }
 
 #Preview {
-    SocialMediaButton(sharePlatform: .facebook)
+    SocialMediaButton(sharePlatform: .yt)
 }
