@@ -22,7 +22,7 @@ struct ScheduleEventDetailView: View {
                     .frame(height: 20)
             }.padding(.top)
             HStack(alignment: .top) {
-                ProfileImageView(imageString: "Dana2")
+                ProfileImageView(imageString: Instructors.getInstructor(.aurora)().imageName)
                 VStack(alignment: .leading) {
                     Text("Beachside Meditation and Reiki")
                         .font(.title2)
@@ -31,7 +31,7 @@ struct ScheduleEventDetailView: View {
                         .font(.headline)
                     Text("10:30 AM - 11:30 AM")
                         .font(.headline)
-                    Text("Aurora Moon")
+                    Text(Instructor.getInstructor(.aurora).name)
                         .font(.headline)
                         .bold()
                 }.padding(.bottom)

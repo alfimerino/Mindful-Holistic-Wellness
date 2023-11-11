@@ -31,6 +31,7 @@
 		38411F1F2AF9D4B60094AB50 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F1E2AF9D4B60094AB50 /* Event.swift */; };
 		38411F212AF9D7540094AB50 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F202AF9D7540094AB50 /* ScheduleViewModel.swift */; };
 		38411F252AF9FD800094AB50 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 38411F242AF9FD800094AB50 /* events.json */; };
+		388D31692AFFEB9200859E42 /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D31682AFFEB9200859E42 /* Instructor.swift */; };
 		38A58F852AFAB9B10060B1E4 /* BloggerAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F842AFAB9B10060B1E4 /* BloggerAPIManager.swift */; };
 		38A58F872AFAB9FA0060B1E4 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F862AFAB9FA0060B1E4 /* Blog.swift */; };
 		38A58F892AFAFF5F0060B1E4 /* BlogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F882AFAFF5F0060B1E4 /* BlogViewModel.swift */; };
@@ -63,6 +64,7 @@
 		38411F1E2AF9D4B60094AB50 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		38411F202AF9D7540094AB50 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
 		38411F242AF9FD800094AB50 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		388D31682AFFEB9200859E42 /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 		38A58F842AFAB9B10060B1E4 /* BloggerAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerAPIManager.swift; sourceTree = "<group>"; };
 		38A58F862AFAB9FA0060B1E4 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 		38A58F882AFAFF5F0060B1E4 /* BlogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewModel.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				38411F242AF9FD800094AB50 /* events.json */,
 				38411F082AF963440094AB50 /* Color+Extension.swift */,
 				38411F0A2AF963690094AB50 /* Colors.xcassets */,
+				388D31682AFFEB9200859E42 /* Instructor.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				38411F212AF9D7540094AB50 /* ScheduleViewModel.swift in Sources */,
 				38411EFA2AF950680094AB50 /* Mindful_Holistic_WellnessApp.swift in Sources */,
 				3835740C2AFB370E00EFA132 /* NewsEventsView.swift in Sources */,
+				388D31692AFFEB9200859E42 /* Instructor.swift in Sources */,
 				383574212AFD5B9200EFA132 /* ProfileImageView.swift in Sources */,
 				38411F102AF9708A0094AB50 /* WelcomeView.swift in Sources */,
 				38411F162AF9AF690094AB50 /* WelcomeMessageTextView.swift in Sources */,
