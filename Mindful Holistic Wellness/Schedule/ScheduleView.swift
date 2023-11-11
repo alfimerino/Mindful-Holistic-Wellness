@@ -14,14 +14,19 @@ struct ScheduleView: View {
         GridItem(.flexible(minimum: 0, maximum: .infinity)),
         ]
     private let eventos = ScheduleViewModel.shared.eventos
+    @State private var showingSheet = false
     var body: some View {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(eventos) { event in
                         HStack {
-                            ScheduleListRowView(event: event)
+                            ScheduleListRowView(event: event).onTapGesture {
+                                showingSheet.toggle()
+                            }
                             Spacer()
-                        }
+                        }.sheet(isPresented: $showingSheet, content: {
+                            ScheduleEventDetailView()
+                        })
                     }.padding(.horizontal).frame(maxHeight: 300)
                 }
             }
