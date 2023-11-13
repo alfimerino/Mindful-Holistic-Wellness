@@ -27,9 +27,9 @@ struct ScheduleListRowView: View {
                 }
             }.padding(.trailing, 20)
             VStack(alignment: .leading) {
-                    Text(event.title)
-                        .font(.headline)
-                        .bold()
+                Text(event.title)
+                    .font(.headline)
+                    .bold()
                 Text(Image(systemName: "mappin.and.ellipse")) +
                 Text("\(event.location)")
                     .font(.footnote)
