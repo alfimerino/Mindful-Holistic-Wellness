@@ -14,6 +14,7 @@ struct ScheduleView: View {
         GridItem(.flexible(minimum: 0, maximum: .infinity)),
         ]
     private let eventos = ScheduleViewModel.shared.eventos
+    @State private var selectedEvent: Event?
     @State private var showingSheet = false
     var body: some View {
             ScrollView {
@@ -21,12 +22,13 @@ struct ScheduleView: View {
                     ForEach(eventos) { event in
                         HStack {
                             ScheduleListRowView(event: event).onTapGesture {
+                                selectedEvent = event
                                 showingSheet.toggle()
-                            }
+                            }.sheet(isPresented: $showingSheet, content: {
+                                ScheduleEventDetailView(selectedEvent: selectedEvent ?? Event.beachSideEvent)
+                            })
                             Spacer()
-                        }.sheet(isPresented: $showingSheet, content: {
-                            ScheduleEventDetailView()
-                        })
+                        }
                     }.padding(.horizontal).frame(maxHeight: 300)
                 }
             }
