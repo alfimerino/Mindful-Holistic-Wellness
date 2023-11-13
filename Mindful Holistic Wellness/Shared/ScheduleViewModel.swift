@@ -13,6 +13,7 @@ final class ScheduleViewModel: NSObject, ObservableObject {
     @Published var events = Event.sampleEvents()
 
     var eventos: [Event]
+    var instructors: [Instructor]
 
     override private init() {
         let decoder = JSONDecoder()
@@ -26,6 +27,12 @@ final class ScheduleViewModel: NSObject, ObservableObject {
 
         self.eventos = eventos
 
+        var instruct: [Instructor] = []
+        for (_, _) in eventos.enumerated() {
+            instruct.append(Instructor.instructorsList.randomElement() ?? Instructor.aurora)
+
+        }
+        self.instructors = instruct
         super.init()
     }
 }

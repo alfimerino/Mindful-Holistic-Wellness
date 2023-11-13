@@ -26,4 +26,8 @@ struct Instructor {
         return Instructor(name: "Zenith Harmony", title: "Yoga Guru", bio: "Greetings, beautiful souls! I'm Zenith Harmony, your cosmic yoga guru, blending ancient wisdom with intergalactic vibes. With a Ph.D. in Quantum Yoga Philosophy and mastery in Anti-Gravity Asanas, I lead transformative sessions that go beyond physical postures. Join me to align your chakras with distant galaxies, inhale stardust, and exhale love. Let's twirl like galaxies and find our zen amidst the cosmic chaos. Namaste, star travelers! 🌌✨", imageName: "emmyprofile")
     }
 
+    static var instructorsList: [Instructor] {
+        return [aurora, zenith, luna]
+    }
+
 }

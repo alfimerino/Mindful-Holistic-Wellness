@@ -11,6 +11,7 @@ struct ScheduleEventDetailView: View {
     @State private var pickerSelection = 0
     @Environment (\.dismiss) var dismiss 
     var selectedEvent: Event
+    var instructor: Instructor
     var body: some View {
         VStack {
             Button {
@@ -23,7 +24,7 @@ struct ScheduleEventDetailView: View {
                     .frame(height: 20)
             }.padding(.top)
             HStack(alignment: .top) {
-                ProfileImageView(imageString: Instructor.aurora.imageName)
+                ProfileImageView(imageString: instructor.imageName)
                 VStack(alignment: .leading) {
                     Text(selectedEvent.title)
                         .font(.title2)
@@ -48,7 +49,7 @@ struct ScheduleEventDetailView: View {
             if pickerSelection == 0 {
                 Text(selectedEvent.description).padding()
             } else if pickerSelection == 1 {
-                Text(Instructor.aurora.bio).padding()
+                Text(instructor.bio).padding()
             }
         }.onAppear()
         Spacer()
@@ -56,5 +57,5 @@ struct ScheduleEventDetailView: View {
 }
 
 #Preview {
-    ScheduleEventDetailView(selectedEvent: Event.beachSideEvent)
+    ScheduleEventDetailView(selectedEvent: Event.beachSideEvent, instructor: Instructor.aurora)
 }
