@@ -26,10 +26,15 @@ final class ScheduleViewModel: NSObject, ObservableObject {
         }
 
         self.eventos = eventos
-
+        var instructorIndex = 0
         var instruct: [Instructor] = []
-        for (_, _) in eventos.enumerated() {
-            instruct.append(Instructor.instructorsList.randomElement() ?? Instructor.aurora)
+
+        for (_, _) in self.eventos.enumerated() {
+            if instructorIndex == 3 {
+                instructorIndex = 0
+            }
+            instruct.append(Instructor.instructorsList[instructorIndex])
+            instructorIndex += 1
 
         }
         self.instructors = instruct
