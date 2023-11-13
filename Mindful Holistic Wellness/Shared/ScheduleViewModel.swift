@@ -13,7 +13,6 @@ final class ScheduleViewModel: NSObject, ObservableObject {
     @Published var events = Event.sampleEvents()
 
     var eventos: [Event]
-    var instructors: [Instructor]
 
     override private init() {
         let decoder = JSONDecoder()
@@ -26,18 +25,6 @@ final class ScheduleViewModel: NSObject, ObservableObject {
         }
 
         self.eventos = eventos
-        var instructorIndex = 0
-        var instruct: [Instructor] = []
-
-        for (_, _) in self.eventos.enumerated() {
-            if instructorIndex == 3 {
-                instructorIndex = 0
-            }
-            instruct.append(Instructor.instructorsList[instructorIndex])
-            instructorIndex += 1
-
-        }
-        self.instructors = instruct
         super.init()
     }
 }

@@ -14,19 +14,19 @@ struct ScheduleView: View {
         GridItem(.flexible(minimum: 0, maximum: .infinity)),
         ]
     private let eventos = ScheduleViewModel.shared.eventos
-    private let instructors = ScheduleViewModel.shared.instructors
+//    private let instructors = ScheduleViewModel.shared.instructors
     @State private var selectedEvent: Event?
     @State private var showingSheet = false
     var body: some View {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(eventos.indices, id: \.self) { index in
+                    ForEach(eventos) { evento in
                         HStack {
-                            ScheduleListRowView(event: eventos[index]).onTapGesture {
-                                selectedEvent = eventos[index]
+                            ScheduleListRowView(event: evento).onTapGesture {
+                                selectedEvent = evento
                                 showingSheet.toggle()
                             }.sheet(isPresented: $showingSheet, content: {
-                                ScheduleEventDetailView(selectedEvent: eventos[index], instructor: instructors[index])
+                                ScheduleEventDetailView(selectedEvent: selectedEvent ?? evento, instructor: Instructor.instructorsList.randomElement() ?? Instructor.zenith)
                             })
                             Spacer()
                         }
