@@ -7,69 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4BEF93BA-39DD-4EDF-A103-E2D89317D3B1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Mindful Holistic Wellness/NewsEvents/BloggerAPIManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "fetchData(completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4BEF93BA-39DD-4EDF-A103-E2D89317D3B1 - 8ef2d9893b11cd2b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Mindful_Holistic_Wellness.BloggerAPIManager.fetchData(completion: (Swift.Optional&lt;Mindful_Holistic_Wellness.Post&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Mindful Holistic Wellness"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alfredomerino/Library/Autosave%20Information/Mindful%20Holistic%20Wellness/Mindful%20Holistic%20Wellness/NewsEvents/BloggerAPIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "289">
-               </Location>
-               <Location
-                  uuid = "4BEF93BA-39DD-4EDF-A103-E2D89317D3B1 - 8ef2d9893b11cc23"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Mindful_Holistic_Wellness.BloggerAPIManager.fetchData(completion: (Swift.Optional&lt;Mindful_Holistic_Wellness.Post&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Mindful Holistic Wellness"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alfredomerino/Library/Autosave%20Information/Mindful%20Holistic%20Wellness/Mindful%20Holistic%20Wellness/NewsEvents/BloggerAPIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "403">
-               </Location>
-               <Location
-                  uuid = "4BEF93BA-39DD-4EDF-A103-E2D89317D3B1 - 8ef2d9893b11cc23"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Mindful_Holistic_Wellness.BloggerAPIManager.fetchData(completion: (Swift.Optional&lt;Mindful_Holistic_Wellness.Post&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Mindful Holistic Wellness"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alfredomerino/Library/Autosave%20Information/Mindful%20Holistic%20Wellness/Mindful%20Holistic%20Wellness/NewsEvents/BloggerAPIManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "696">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "FE862E2B-18C4-42B4-BEA8-0EF89C127EF6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -81,6 +18,22 @@
             endingLineNumber = "55"
             landmarkName = "fetchBlog(completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F66F733B-6C1F-4DEA-B7A0-3E425D243690"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mindful Holistic Wellness/NewsEvents/NewsEventsDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
