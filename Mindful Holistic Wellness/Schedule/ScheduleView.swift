@@ -14,7 +14,6 @@ struct ScheduleView: View {
         GridItem(.flexible(minimum: 0, maximum: .infinity)),
         ]
     private let eventos = ScheduleViewModel.shared.eventos
-//    private let instructors = ScheduleViewModel.shared.instructors
     @State private var selectedEvent: Event?
     @State private var showingSheet = false
     var body: some View {
