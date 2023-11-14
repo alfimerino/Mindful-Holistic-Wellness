@@ -19,11 +19,11 @@ struct Instructor {
     }
 
     static var luna: Instructor {
-        return Instructor(name: "Luna Starlight", title: "Sound Bath Specialist", bio: "Hello, radiant beings! I'm Luna Starlight, your guide to cosmic yoga adventures. With a galaxy of experience and a heart full of love, I lead transformative sessions. Certified in Quantum Yoga Philosophy, I'll help you align your chakras with the universe. Join me in inhaling stardust and exhaling peace. Let's journey together. Namaste, cosmic explorers! 🌟🧘‍♂️", imageName: "Maria")
+        return Instructor(name: "Luna Starlight", title: "Sound Bath Specialist", bio: "Hello, radiant beings! I'm Luna Starlight, your guide to cosmic yoga adventures. With a galaxy of experience and a heart full of love, I lead transformative sessions. Certified in Quantum Yoga Philosophy, I'll help you align your chakras with the universe. Join me in inhaling stardust and exhaling peace. Let's journey together. Namaste, cosmic explorers! 🌟🧘‍♂️", imageName: "LunaPortrait")
     }
 
     static var zenith: Instructor {
-        return Instructor(name: "Zenith Harmony", title: "Yoga Guru", bio: "Greetings, beautiful souls! I'm Zenith Harmony, your cosmic yoga guru, blending ancient wisdom with intergalactic vibes. With a Ph.D. in Quantum Yoga Philosophy and mastery in Anti-Gravity Asanas, I lead transformative sessions that go beyond physical postures. Join me to align your chakras with distant galaxies, inhale stardust, and exhale love. Let's twirl like galaxies and find our zen amidst the cosmic chaos. Namaste, star travelers! 🌌✨", imageName: "emmyprofile")
+        return Instructor(name: "Zenith Harmony", title: "Yoga Guru", bio: "Greetings, beautiful souls! I'm Zenith Harmony, your cosmic yoga guru, blending ancient wisdom with intergalactic vibes. With a Ph.D. in Quantum Yoga Philosophy and mastery in Anti-Gravity Asanas, I lead transformative sessions that go beyond physical postures. Join me to align your chakras with distant galaxies, inhale stardust, and exhale love. Let's twirl like galaxies and find our zen amidst the cosmic chaos. Namaste, star travelers! 🌌✨", imageName: "zenithPortrait")
     }
 
     static var instructorsList: [Instructor] {

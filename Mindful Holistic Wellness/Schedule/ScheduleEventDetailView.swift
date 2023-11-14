@@ -9,20 +9,11 @@ import SwiftUI
 
 struct ScheduleEventDetailView: View {
     @State private var pickerSelection = 0
-    @Environment (\.dismiss) var dismiss 
     var selectedEvent: Event
     var instructor: Instructor
     var body: some View {
         VStack {
-            Button {
-                dismiss()
-            }label: {
-                Image(systemName: "chevron.compact.down")
-                    .resizable()
-                    .foregroundColor(.gray)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 20)
-            }.padding(.top)
+           SheetDismissButton()
             HStack(alignment: .top) {
                 ProfileImageView(imageString: instructor.imageName)
                 VStack(alignment: .leading) {
