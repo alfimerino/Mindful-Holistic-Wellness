@@ -17,13 +17,18 @@ struct ContactUsView: View {
                 ContactUsProfileView(instructor: Instructor.luna)
                 Spacer()
             }
-            
-            ContactUsProfileView(instructor: Instructor.aurora)
+            HStack(alignment: .center) {
+                Spacer()
+                ContactUsProfileView(instructor: Instructor.aurora)
+                Spacer()
+            }
 
-            Image("Group3")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 180)
+            HStack {
+                Image("SHP2")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
+            }
 
             HStack(alignment: .center, spacing: 32) {
                 Spacer()

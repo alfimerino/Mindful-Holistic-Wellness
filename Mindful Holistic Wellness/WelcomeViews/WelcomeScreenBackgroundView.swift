@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WelcomeScreenBackgroundView: View {
     var body: some View {
-        Image("singingBowlsEvent")
+        Image("buddhaWelcome")
             .resizable()
             .ignoresSafeArea()
             .scaleEffect(x: -1, y: 1)
