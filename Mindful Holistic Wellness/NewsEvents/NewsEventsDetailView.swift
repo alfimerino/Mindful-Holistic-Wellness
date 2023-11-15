@@ -12,7 +12,6 @@ struct NewsEventsDetailView: View {
     var image: Image
     var body: some View {
         VStack {
-            SheetDismissButton()
             image
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 400)

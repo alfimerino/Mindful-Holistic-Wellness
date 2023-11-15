@@ -13,7 +13,6 @@ final class BlogViewModel: NSObject, ObservableObject {
 
     @Published var posts: Post?
     var itemsList: [Item] = []
-    var imageList: [Image] = []
 
     func fetchData() {
         apiManager.fetchData { [weak self] posts, error in
