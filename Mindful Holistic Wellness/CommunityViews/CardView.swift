@@ -11,10 +11,11 @@ import SwiftUI
 struct CardView: View {
     var title: String
     var description: String
+    var imageName: String
 
     var body: some View {
         ZStack(alignment: .top) {
-            Image("zenithPortrait")
+            Image(imageName)
                 .resizable()
                 .scaledToFill()
                 .frame(maxWidth: .infinity)
@@ -28,8 +29,8 @@ struct CardView: View {
                         .bold()
                         .padding(.bottom, 4)
 
-                    Text(description)
-                        .foregroundColor(.black)
+//                    Text(description)
+//                        .foregroundColor(.black)
                     Spacer()
                 }
                 Spacer()
@@ -43,5 +44,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView(title: "What is Reiki?", description: "Learn about the benefits of this wonderous craft.")
+    CardView(title: "What is Reiki?", description: "Learn about the benefits of this wonderous craft.", imageName: "medi1")
 }

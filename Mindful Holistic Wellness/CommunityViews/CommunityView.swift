@@ -15,10 +15,10 @@ struct CommunityView: View {
 
     var body: some View {
         List() {
-            ForEach(0..<5) { index in
+            ForEach(articles) { article in
                 HStack(alignment: .center) {
                     Spacer()
-                    CardView(title: "Item \(index + 1)", description: "This is the description for Item \(index + 1)")
+                    CardView(title: article.title, description: article.content, imageName: communityViewModel.imageNames.randomElement() ?? "Maria")
                         .listRowInsets(EdgeInsets()) // Remove default list row insets
                     Spacer()
                 }.frame(height: 550)
