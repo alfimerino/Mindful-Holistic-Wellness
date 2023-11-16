@@ -31,6 +31,11 @@
 		38411F1F2AF9D4B60094AB50 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F1E2AF9D4B60094AB50 /* Event.swift */; };
 		38411F212AF9D7540094AB50 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411F202AF9D7540094AB50 /* ScheduleViewModel.swift */; };
 		38411F252AF9FD800094AB50 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 38411F242AF9FD800094AB50 /* events.json */; };
+		3873EDAA2B058E4300198056 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873EDA92B058E4300198056 /* CommunityView.swift */; };
+		3873EDAC2B065B8200198056 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873EDAB2B065B8200198056 /* CardView.swift */; };
+		3873EDAE2B06622700198056 /* communityArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = 3873EDAD2B06622700198056 /* communityArticles.json */; };
+		3873EDB02B069EEB00198056 /* CommunityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873EDAF2B069EEB00198056 /* CommunityViewModel.swift */; };
+		3873EDB22B069F3500198056 /* CommunityArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873EDB12B069F3500198056 /* CommunityArticle.swift */; };
 		388D31692AFFEB9200859E42 /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D31682AFFEB9200859E42 /* Instructor.swift */; };
 		388D316B2B03A20D00859E42 /* NewsEventsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D316A2B03A20D00859E42 /* NewsEventsDetailView.swift */; };
 		388D316D2B03D12C00859E42 /* SheetDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D316C2B03D12C00859E42 /* SheetDismissButton.swift */; };
@@ -66,6 +71,11 @@
 		38411F1E2AF9D4B60094AB50 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		38411F202AF9D7540094AB50 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
 		38411F242AF9FD800094AB50 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		3873EDA92B058E4300198056 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		3873EDAB2B065B8200198056 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3873EDAD2B06622700198056 /* communityArticles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = communityArticles.json; sourceTree = "<group>"; };
+		3873EDAF2B069EEB00198056 /* CommunityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewModel.swift; sourceTree = "<group>"; };
+		3873EDB12B069F3500198056 /* CommunityArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityArticle.swift; sourceTree = "<group>"; };
 		388D31682AFFEB9200859E42 /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 		388D316A2B03A20D00859E42 /* NewsEventsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEventsDetailView.swift; sourceTree = "<group>"; };
 		388D316C2B03D12C00859E42 /* SheetDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetDismissButton.swift; sourceTree = "<group>"; };
@@ -140,6 +150,7 @@
 		38411EF82AF950680094AB50 /* Mindful Holistic Wellness */ = {
 			isa = PBXGroup;
 			children = (
+				3873EDA82B058E2E00198056 /* CommunityViews */,
 				38411F0E2AF968BE0094AB50 /* Mindful-Holistic-Wellness-Info.plist */,
 				38411EF92AF950680094AB50 /* Mindful_Holistic_WellnessApp.swift */,
 				38411F182AF9B2C50094AB50 /* MainView.swift */,
@@ -185,6 +196,18 @@
 				38411F112AF9AE070094AB50 /* GetStartedButton.swift */,
 			);
 			path = WelcomeViews;
+			sourceTree = "<group>";
+		};
+		3873EDA82B058E2E00198056 /* CommunityViews */ = {
+			isa = PBXGroup;
+			children = (
+				3873EDA92B058E4300198056 /* CommunityView.swift */,
+				3873EDAB2B065B8200198056 /* CardView.swift */,
+				3873EDAD2B06622700198056 /* communityArticles.json */,
+				3873EDAF2B069EEB00198056 /* CommunityViewModel.swift */,
+				3873EDB12B069F3500198056 /* CommunityArticle.swift */,
+			);
+			path = CommunityViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +270,7 @@
 			files = (
 				38411F252AF9FD800094AB50 /* events.json in Resources */,
 				38411F0B2AF963690094AB50 /* Colors.xcassets in Resources */,
+				3873EDAE2B06622700198056 /* communityArticles.json in Resources */,
 				38411F012AF9506A0094AB50 /* Preview Assets.xcassets in Resources */,
 				38411EFE2AF9506A0094AB50 /* Assets.xcassets in Resources */,
 			);
@@ -264,14 +288,17 @@
 				383574182AFD1C4600EFA132 /* SocialMediaButton.swift in Sources */,
 				38A58F892AFAFF5F0060B1E4 /* BlogViewModel.swift in Sources */,
 				38411F192AF9B2C50094AB50 /* MainView.swift in Sources */,
+				3873EDAA2B058E4300198056 /* CommunityView.swift in Sources */,
 				3835740E2AFBD8B100EFA132 /* Test.swift in Sources */,
 				38411F092AF963440094AB50 /* Color+Extension.swift in Sources */,
 				38411F122AF9AE070094AB50 /* GetStartedButton.swift in Sources */,
+				3873EDB02B069EEB00198056 /* CommunityViewModel.swift in Sources */,
 				3835741D2AFD5A4500EFA132 /* ScheduleView.swift in Sources */,
 				38411F1F2AF9D4B60094AB50 /* Event.swift in Sources */,
 				38411F142AF9AEC70094AB50 /* WelcomeScreenBackgroundView.swift in Sources */,
 				3835741F2AFD5AF800EFA132 /* ScheduleEventDetailView.swift in Sources */,
 				38A58F852AFAB9B10060B1E4 /* BloggerAPIManager.swift in Sources */,
+				3873EDAC2B065B8200198056 /* CardView.swift in Sources */,
 				38411F212AF9D7540094AB50 /* ScheduleViewModel.swift in Sources */,
 				388D316D2B03D12C00859E42 /* SheetDismissButton.swift in Sources */,
 				38411EFA2AF950680094AB50 /* Mindful_Holistic_WellnessApp.swift in Sources */,
@@ -282,6 +309,7 @@
 				38411F162AF9AF690094AB50 /* WelcomeMessageTextView.swift in Sources */,
 				383574162AFC59DC00EFA132 /* ContactUsProfileView.swift in Sources */,
 				383574102AFBEAA500EFA132 /* ScheduleDateAndTimeView.swift in Sources */,
+				3873EDB22B069F3500198056 /* CommunityArticle.swift in Sources */,
 				38411F1B2AF9C7270094AB50 /* ScheduleListRowView.swift in Sources */,
 				388D316B2B03A20D00859E42 /* NewsEventsDetailView.swift in Sources */,
 				383574122AFBEBCF00EFA132 /* ScheduleEventTitleDetailsView.swift in Sources */,

@@ -21,6 +21,16 @@ struct MainView: View {
                 }
             }
             NavigationView {
+                CommunityView()
+            }
+            .tabItem {
+                VStack {
+                    Image(systemName: "figure.2")
+
+                    Text("Community")
+                }
+            }
+            NavigationView {
                 NewsEventsView()
             }
             .tabItem {
