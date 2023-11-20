@@ -25,12 +25,9 @@ struct CardView: View {
                 VStack(alignment: .leading) {
                     Text(title)
                         .font(.title)
-                        .foregroundColor(.black)
+                        .foregroundStyle(Color.white)
                         .bold()
                         .padding(.bottom, 4)
-
-//                    Text(description)
-//                        .foregroundColor(.black)
                     Spacer()
                 }
                 Spacer()
@@ -44,5 +41,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView(title: "What is Reiki?", description: "Learn about the benefits of this wonderous craft.", imageName: "medi1")
+    CardView(title: "What is Reiki, and how do we benefit from this practice?", description: "Learn about the benefits of this wonderous craft.", imageName: "medi8")
 }

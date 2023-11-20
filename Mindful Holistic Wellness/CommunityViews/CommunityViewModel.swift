@@ -12,7 +12,7 @@ final class CommunityViewModel: NSObject, ObservableObject {
     static let shared = CommunityViewModel()
 
     var articles: [CommunityArticle]
-    var imageNames = ["medi1","medi2","medi3","medi4","medi5","medi6"].shuffled()
+    var imageNames = ["medi1","medi2","medi3","medi4","medi5","medi6","medi7","medi8"].shuffled()
 
     override private init() {
         let decoder = JSONDecoder()

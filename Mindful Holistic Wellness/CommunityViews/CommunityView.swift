@@ -18,8 +18,14 @@ struct CommunityView: View {
             ForEach(articles) { article in
                 HStack(alignment: .center) {
                     Spacer()
-                    CardView(title: article.title, description: article.content, imageName: communityViewModel.imageNames.randomElement() ?? "Maria")
+                    let randomImage = communityViewModel.imageNames.randomElement()
+                    CardView(title: article.title, description: article.content, imageName: randomImage ?? "Maria")
                         .listRowInsets(EdgeInsets()) // Remove default list row insets
+                        .overlay {
+                            NavigationLink("Title") {
+                                CommunityArticleDetailView(image: randomImage ?? "medi3", descriptionText: article.content, titleText: article.title)
+                            }.navigationBarTitleDisplayMode(.inline).opacity(0)
+                        }
                     Spacer()
                 }.frame(height: 550)
             }.padding(.bottom)

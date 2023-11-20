@@ -42,6 +42,7 @@
 		38A58F852AFAB9B10060B1E4 /* BloggerAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F842AFAB9B10060B1E4 /* BloggerAPIManager.swift */; };
 		38A58F872AFAB9FA0060B1E4 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F862AFAB9FA0060B1E4 /* Blog.swift */; };
 		38A58F892AFAFF5F0060B1E4 /* BlogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F882AFAFF5F0060B1E4 /* BlogViewModel.swift */; };
+		38B96F922B0BD69600924697 /* CommunityArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B96F912B0BD69600924697 /* CommunityArticleDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		38A58F842AFAB9B10060B1E4 /* BloggerAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerAPIManager.swift; sourceTree = "<group>"; };
 		38A58F862AFAB9FA0060B1E4 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 		38A58F882AFAFF5F0060B1E4 /* BlogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewModel.swift; sourceTree = "<group>"; };
+		38B96F912B0BD69600924697 /* CommunityArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityArticleDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				3873EDAD2B06622700198056 /* communityArticles.json */,
 				3873EDAF2B069EEB00198056 /* CommunityViewModel.swift */,
 				3873EDB12B069F3500198056 /* CommunityArticle.swift */,
+				38B96F912B0BD69600924697 /* CommunityArticleDetailView.swift */,
 			);
 			path = CommunityViews;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				383574182AFD1C4600EFA132 /* SocialMediaButton.swift in Sources */,
 				38A58F892AFAFF5F0060B1E4 /* BlogViewModel.swift in Sources */,
 				38411F192AF9B2C50094AB50 /* MainView.swift in Sources */,
+				38B96F922B0BD69600924697 /* CommunityArticleDetailView.swift in Sources */,
 				3873EDAA2B058E4300198056 /* CommunityView.swift in Sources */,
 				3835740E2AFBD8B100EFA132 /* Test.swift in Sources */,
 				38411F092AF963440094AB50 /* Color+Extension.swift in Sources */,
