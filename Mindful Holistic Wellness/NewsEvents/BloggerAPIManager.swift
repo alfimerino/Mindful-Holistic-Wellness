@@ -37,12 +37,12 @@ class BloggerAPIManager {
         if let url = URL(string: urlString) {
             URLSession.shared.dataTask(with: url) { data, response, error in
                 if let data = data {
-                    print(data.description)
+//                    print(data.description)
                     do {
                         let jsonData = data
                            let decoder = JSONDecoder()
-                           let postList = try decoder.decode(Blogger.self, from: jsonData)
-                        print((postList.items.first?.title ?? "No title found") + "THis is the kind")
+                        _ = try decoder.decode(Blogger.self, from: jsonData)
+//                        print((postList.items.first?.title ?? "No title found") + "THis is the kind")
                     } catch {
                         print("An Error Occurred: \(error)")
                         completion(nil, error)
