@@ -1,8 +1,8 @@
-# Mindful Holistic Wellness
+# Mindful Holistic Wellness 
+<img src="Mindful%20Holistic%20Wellness/Assets.xcassets/Group3.imageset/Group%203.png" width="120" height="200">
 
-Brief description of your project.
 
-![Project Logo](Mindful%20Holistic%20Wellness/Assets.xcassets/Group3.imageset/Group%203.png)
+### The Unofficial iOS App for Midful Holistic Wellness (MindfulOT)
 
   Welcome to the Mindful Holistic Wellness Studio, your haven for well-being! 🌿✨ Explore a curated schedule of regular events, discover special transformative sessions, dive into insightful articles, and get to know the heart of our studio — our dedicated instructors.
 
