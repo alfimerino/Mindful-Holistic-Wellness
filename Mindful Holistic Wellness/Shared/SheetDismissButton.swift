@@ -23,7 +23,7 @@ struct SheetDismissButton: View {
             if text != nil {
                 Text(text ?? "Back")
                     .font(.headline)
-                    .foregroundColor(.primary)
+                    .foregroundColor(.gray)
             }
         }.padding(.top)
     }

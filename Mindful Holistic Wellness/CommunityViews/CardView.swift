@@ -27,7 +27,7 @@ struct CardView: View {
                         .font(.title)
                         .foregroundStyle(Color.white)
                         .bold()
-                        .padding(.bottom, 4)
+                        .padding([.bottom, .trailing], 4)
                     Spacer()
                 }
                 Spacer()

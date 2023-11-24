@@ -15,24 +15,25 @@ struct CommunityView: View {
 
     var body: some View {
         List() {
-            ForEach(articles) { article in
-                HStack(alignment: .center) {
+            ForEach(Array(articles.enumerated()), id: \.element.id) { index, article in
+                VStack(alignment: .leading) {
                     Spacer()
-                    let randomImage = communityViewModel.imageNames.randomElement()
-                    CardView(title: article.title, description: article.content, imageName: randomImage ?? "Maria")
+                    let localArticle = article
+
+                    CardView(title: localArticle.title, description: localArticle.content, imageName: localArticle.imageName)
                         .listRowInsets(EdgeInsets()) // Remove default list row insets
                         .onTapGesture {
+                            selectedArticle = localArticle
                             showingSheet.toggle()
-                        }.fullScreenCover(isPresented: $showingSheet, content: {
-                            CommunityArticleDetailView(image: randomImage ?? "medi3", descriptionText: article.content, titleText: article.title)
+                        }.sheet(isPresented: $showingSheet, content: {
+                            CommunityArticleDetailView(image: article.imageName, descriptionText: article.content, titleText: article.title, selectedArticle: $selectedArticle)
                         })
                     Spacer()
                 }.frame(height: 550)
             }.padding(.bottom)
                 .navigationTitle("Community & Resources")
-        }.listStyle(.grouped).background(.primary).onAppear {
-            print(articles.first?.content ?? "No article")
-        }
+
+        }.listStyle(.grouped).background(.primary)
     }
 }
 
