@@ -24,7 +24,7 @@ struct ContactUsView: View {
             }
 
             HStack {
-                Image("SHP2")
+                Image("Group3")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 180, height: 180)
