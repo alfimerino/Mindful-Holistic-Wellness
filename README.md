@@ -19,8 +19,7 @@ Immerse yourself in our scheduled mindfulness sessions, carefully designed to al
 ### News & Events: 
 Join us for exclusive events that go beyond the routine, offering unique experiences to rejuvenate your mind, body, and soul. Stay tuned for announcements on special events that add an extra layer of serenity to your wellness journey.
 <p align="leading">
-<img src="Mindful%20Holistic%20Wellness/Assets.xcassets/ScreenShots/NewsEvents.imageset/NewsEvents.png" width="260" height="500">
-<img src="Mindful%20Holistic%20Wellness/Assets.xcassets/ScreenShots/NewsEvents2.imageset/NewsEvents2.png" width="260" height="500"></p>
+<img src="Mindful%20Holistic%20Wellness/Assets.xcassets/ScreenShots/NewsEvents3.imageset/Screenshot 2023-11-27 at 10.13.20 AM.png" width="260" height="500"></p>
 
 ### Community Articles: 
 Delve into a collection of thoughtfully curated articles covering a spectrum of topics, from holistic practices to wellness tips. Explore our library of articles to deepen your understanding of holistic practices and well-being.
