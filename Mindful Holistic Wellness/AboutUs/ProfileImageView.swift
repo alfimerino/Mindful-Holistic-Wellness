@@ -14,7 +14,8 @@ struct ProfileImageView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(maxHeight: 150)
-        .clipShape(.circle)            }
+            .clipShape(.circle)
+    }
 }
 
 #Preview {
