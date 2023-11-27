@@ -15,47 +15,54 @@ struct NewsEventsView: View {
     @State var loadedImages = [Image]()
     @State var presentSheet = false
     var body: some View {
-        NavigationView {
-            List(blogViewModel.itemsList) { list in
-                Section {
-                    ForEach(list.postImages.indices, id: \.self) { index in
-                        HStack {
-                            AsyncImage(url: URL(string: list.postImages[index].url)) { phase in
-                                switch phase {
-                                case .empty:
-                                    ProgressView()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(height: 150, alignment: .leading)
-                                case .success(let image):
-                                    HStack(alignment: .top, spacing: 12) {
-                                        image.resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(height: 150, alignment: .leading)
-                                        Text(list.title).truncationMode(.tail).lineLimit(6)
-                                        NavigationLink("", destination: NewsEventsDetailView(title: "", image: image))
+            NavigationView {
+                List(blogViewModel.itemsList) { list in
+                    Section {
+
+                        ForEach(list.postImages.indices, id: \.self) { index in
+                            GeometryReader { geometry in
+                                VStack(spacing: 30) {
+                                    AsyncImage(url: URL(string: list.postImages[index].url)) { phase in
+                                        switch phase {
+                                        case .empty:
+                                            ZStack {
+                                                NewsEventCardView()
+                                                ProgressView()
+                                                    .aspectRatio(contentMode: .fill)
+                                                    .frame(height: geometry.size.height + 20)
+                                            }
+                                        case .success(let image):
+                                            NewsEventCardView(image: image)
+                                                .frame(height: geometry.size.height)
+                                                .aspectRatio(contentMode: .fill)
+                                                .onTapGesture {
+                                                    presentSheet.toggle()
+                                                }
+                                        case .failure:
+                                            Image(systemName: "photo")
+                                                .frame(height: geometry.size.height + 100)
+                                        @unknown default:
+                                            EmptyView()
+                                        }
                                     }
-                                case .failure:
-                                    Image(systemName: "photo")
-                                @unknown default:
-                                    EmptyView()
+                                    Spacer()
                                 }
+                                .listRowInsets(EdgeInsets())
                             }
-                            Spacer()
-                        }.onTapGesture {
-                            presentSheet.toggle()
+                            .frame(height: 300) // Set a fixed height for the row
                         }
                     }
+                    .navigationTitle("Latest News & Events")
                 }
-                .navigationTitle("Latest News & Events")
-            }.listStyle(.grouped)
+                .listStyle(.insetGrouped)
                 .onAppear {
                     blogViewModel.fetchData()
                     if let posts = blogViewModel.posts {
                         items = posts.items
                     }
                 }
+            }
         }
-    }
 
     private func saveImage(_ image: Image) {
         self.loadedImages.append(image)
