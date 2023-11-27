@@ -30,7 +30,7 @@ Delve into a collection of thoughtfully curated articles covering a spectrum of 
 ### About Us: 
 Learn more about our studio, its philosophy, and the tranquil environment we've cultivated to support your wellness journey.Get acquainted with our experienced instructors, each passionate about guiding you on your path to holistic wellness.
 <p align="leading">
-<img src="Mindful%20Holistic%20Wellness/Assets.xcassets/ScreenShots/AboutUsScreen.imageset/AboutUsScreen.png" width="260" height="500"></p>
+<img src="Mindful%20Holistic%20Wellness/Assets.xcassets/ScreenShots/AboutUs2.imageset/AboutUs2.png" width="260" height="500"></p>
 
 ## License
 
