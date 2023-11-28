@@ -44,6 +44,7 @@
 		38A58F892AFAFF5F0060B1E4 /* BlogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A58F882AFAFF5F0060B1E4 /* BlogViewModel.swift */; };
 		38B96F922B0BD69600924697 /* CommunityArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B96F912B0BD69600924697 /* CommunityArticleDetailView.swift */; };
 		38E292CB2B14C45100CA70E3 /* NewsEventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E292CA2B14C45100CA70E3 /* NewsEventCardView.swift */; };
+		38E292CD2B162FF400CA70E3 /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E292CC2B162FF400CA70E3 /* ProfileDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		38A58F882AFAFF5F0060B1E4 /* BlogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewModel.swift; sourceTree = "<group>"; };
 		38B96F912B0BD69600924697 /* CommunityArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityArticleDetailView.swift; sourceTree = "<group>"; };
 		38E292CA2B14C45100CA70E3 /* NewsEventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEventCardView.swift; sourceTree = "<group>"; };
+		38E292CC2B162FF400CA70E3 /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				383574172AFD1C4600EFA132 /* SocialMediaButton.swift */,
 				383574152AFC59DC00EFA132 /* ContactUsProfileView.swift */,
 				383574202AFD5B9200EFA132 /* ProfileImageView.swift */,
+				38E292CC2B162FF400CA70E3 /* ProfileDetailView.swift */,
 			);
 			path = AboutUs;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				3873EDB02B069EEB00198056 /* CommunityViewModel.swift in Sources */,
 				3835741D2AFD5A4500EFA132 /* ScheduleView.swift in Sources */,
 				38411F1F2AF9D4B60094AB50 /* Event.swift in Sources */,
+				38E292CD2B162FF400CA70E3 /* ProfileDetailView.swift in Sources */,
 				38411F142AF9AEC70094AB50 /* WelcomeScreenBackgroundView.swift in Sources */,
 				3835741F2AFD5AF800EFA132 /* ScheduleEventDetailView.swift in Sources */,
 				38A58F852AFAB9B10060B1E4 /* BloggerAPIManager.swift in Sources */,
