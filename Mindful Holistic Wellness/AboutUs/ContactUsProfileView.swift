@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContactUsProfileView: View {
+    @State private var showingSheet = false
     var instructor: Instructor
     var body: some View {
         VStack {
@@ -23,7 +24,11 @@ struct ContactUsProfileView: View {
                 .bold()
             
             Text(instructor.title)
-        }
+        }.onTapGesture {
+            showingSheet.toggle()
+        }.sheet(isPresented: $showingSheet, content: {
+            ProfileDetailView(instructor: instructor)
+        })
     }
 }
 

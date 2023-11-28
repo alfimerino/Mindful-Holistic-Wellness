@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContactUsView: View {
+    @State var showingSheet = false
     var body: some View {
         ScrollView {
             HStack(alignment: .center) {
@@ -28,7 +29,12 @@ struct ContactUsView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 180, height: 180)
-            }
+            }.onTapGesture {
+                showingSheet.toggle()
+
+            }.sheet(isPresented: $showingSheet, content: {
+                ProfileDetailView()
+            })
 
             HStack(alignment: .center, spacing: 32) {
                 Spacer()
